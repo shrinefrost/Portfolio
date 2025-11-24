@@ -1,11 +1,12 @@
+import styled from "styled-components";
 function Nav() {
   return (
-    <nav>
-      <div>
+    <NavBar>
+      <div className="logo">
         <div>S</div>
         <span>Suraj</span>
       </div>
-      <div>
+      <div className="Page-link">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#process">Process</a>
@@ -14,8 +15,17 @@ function Nav() {
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </div>
-    </nav>
+    </NavBar>
   );
 }
+
+const NavBar = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #1b1b1b;
+  color: white;
+`;
 
 export default Nav;
