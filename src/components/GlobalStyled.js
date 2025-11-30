@@ -6,5 +6,28 @@ const GlobalStyled = createGlobalStyle`
         padding:0;
         box-sizing:border-box;
     }
+    body{
+        background-color:#1b1b1b;
+        color:white;
+      
+        font-family:poppins,sans-serif;
+    }
+  button {
+    font-weight:bold;
+    font-size:1.1rem;
+    cursor: pointer;
+    padding:1rem 2rem;
+    border:3px solid #23d997;
+    background:transparent;
+    color:white;
+    &:hover{
+        background-color:#23d997;
+        color:white;
+    }
+    transition:all ease-in-out 0.5s;
+  }
+  img{
+    overflow:hidden;
+  }
 `;
 export default GlobalStyled;
